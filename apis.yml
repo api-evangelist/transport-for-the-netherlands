@@ -1,0 +1,32 @@
+aid: transport-for-the-netherlands
+name: Transport for The Netherlands
+description: "NS, only trains"
+url: http://www.ns.nl/reisinformatie/ns-api
+specificationVersion: '0.20'
+created: '2026-05-28'
+modified: '2026-05-28'
+x-source: public-apis/public-apis
+x-category: "Transportation"
+x-tier: 3
+x-tier-reason: bulk-registered-from-public-apis
+tags:
+  - Transportation
+  - Public APIs
+apis:
+  - name: Transport for The Netherlands
+    description: "NS, only trains"
+    humanURL: http://www.ns.nl/reisinformatie/ns-api
+    baseURL: http://www.ns.nl/reisinformatie/ns-api
+    tags:
+      - Transportation
+    properties:
+      - type: Documentation
+        url: http://www.ns.nl/reisinformatie/ns-api
+common:
+  - type: Website
+    url: http://www.ns.nl/reisinformatie/ns-api
+  - type: PublicAPIsListing
+    url: https://github.com/public-apis/public-apis
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
