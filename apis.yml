@@ -39,7 +39,6 @@ apis:
   - name: Transport for The Netherlands
     description: "NS, only trains"
     humanURL: http://www.ns.nl/reisinformatie/ns-api
-    baseURL: http://www.ns.nl/reisinformatie/ns-api
     tags:
       - Transportation
     properties:
