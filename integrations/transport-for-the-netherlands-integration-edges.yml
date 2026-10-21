@@ -55,6 +55,67 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-transit-mobility.py
   first_seen: '2026-10-18'
+- partner_name: OSDM (UIC Open Sales and Distribution Model)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://osdm.io/tools/implementations/
+  category: rail sales & distribution API standard (OSDM implementation)
+  contract_reference:
+    register: OSDM implementation status table (osdm.io/tools/implementations/, UIC OSDM team)
+    standard: OSDM Online API (UIC Open Sales and Distribution Model, IRS 90918-10)
+    spec_file: null
+    role: osdm-implementer
+    registered_name: NS
+    register_id: https://www.ns.nl/
+    matched_domain: ns.nl
+    matched_by: domain+verified
+    osdm_roles:
+    - Distributor
+    - Fare Provider
+    - Retailer
+    implementations:
+    - osdm_version: '3.8'
+      state: in production
+      roles: Retailer, Distributor & Fare Provider
+    register_as_of: January 2026
+    signal_note: 'listing alone: the OSDM team''s implementation status table (parties ask to be added; no conformance
+      test is published), so no certified_products; versions, states and roles are context, never counted; implementing
+      the API is shape (report-only)'
+    detected_by: sweep-rail-osdm.py
+    detected: '2026-10-20'
+  detected_by: sweep-rail-osdm.py
+  first_seen: '2026-10-20'
+- partner_name: UIC (International Union of Railways)
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://uic.org/companies/nv-nederlandse-spoorwegen
+  category: railway union membership
+  contract_reference:
+    register: UIC members (uic.org/members/, the page's own member payload)
+    standard: UIC International Railway Solutions (IRS) / OSDM steward
+    spec_file: null
+    role: uic-member
+    registered_name: N.V. Nederlandse Spoorwegen
+    register_acronym: NS
+    register_id: https://uic.org/companies/nv-nederlandse-spoorwegen
+    register_country: Netherlands
+    partner_tier: Active member
+    matched_domain: ns.nl
+    matched_by: domain+verified
+    signal_note: 'participation only: membership of the worldwide railway union that stewards OSDM and the IRS leaflets;
+      the membership class is partner_tier, context only'
+    detected_by: sweep-rail-osdm.py
+    detected: '2026-10-20'
+  detected_by: sweep-rail-osdm.py
+  first_seen: '2026-10-20'
 generated: '2026-10-18'
 method: searched
 source:
@@ -65,3 +126,13 @@ checked:
 - https://files.mobilitydatabase.org/feeds_v2.csv
 - https://github.com/MobilityData/gbfs/blob/master/systems.csv
 - https://maas-alliance.eu/
+- https://eradis.era.europa.eu/safety_docs/licences/default.aspx
+- https://osdm.io/
+- https://osdm.io/tools/implementations/
+- https://tps.thetrainline.com/our-products/global-api/
+- https://uic.org/members/
+- https://www.amtrak.com/partners
+- https://www.raildeliverygroup.com/about-us/our-members.html
+- https://www.raildeliverygroup.com/our-services/fares-and-ticketing/rdg-accreditation.html
+- https://www.rspaccreditation.org/publicDocumentation.php
+- https://www.thetrainline.com/partners
